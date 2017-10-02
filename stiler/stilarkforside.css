@@ -75,7 +75,7 @@ article.emner{
 }
 
 .btnlesMer {
-	background-color: #444;
+	background-color: #E6E6FA;
 	padding: 10px 0px;
 	text-align: center;
 	font-size: 18px;
@@ -86,20 +86,22 @@ article.emner{
 }
 
 a:link {
-	color: green;
+	color: #0645AD;
 }
 
 a:visited{
-	color: yellow;
+	color: 	#0B0080;
 }
 
 a:hover {
-	color: purple;
+	color: #0645AD;
 	box-shadow: inset 0px 0px 5px 5px #222;
+	text-decoration: underline;
 }
 
 a:active {
-	color: blue;
+	color: #0645AD;
+	opacity: 0.7;
 }
 
 #about {
