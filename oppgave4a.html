@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Oppgave 4 WEB</title>
+		<link rel="stylesheet" type="text/css" href="stiler/stilarkartikkel.css" />
+		<script src="https://use.fontawesome.com/d791c8d292.js">
+		</script>
+	</head>
+	<body>
+		<section id="master-grid">
+			<header>
+					<nav>
+					<ul>
+						<li><a href="index.html">Hjem</a></li>
+						<li><a>Linkearkiv</a>
+							<ul>
+								<li><a href="#">Nåværende prosjekter</a></li>
+								<li><a href="#">Kommende prosjekter</a></li>
+							</ul>
+						</li>	
+						<li><a>Info</a>
+							<ul>
+								<li><a href="#">artikler</a></li>
+								<li><a href="#">Git og Github</a></li>
+								<li><a href="#">Math ML</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<article class="emner">
+					<h1>Math ML
+					</h1>
+					<p>Math ML står for Mathematical Markup Language og er et eget språk for å presentere matematiske formler på nett.
+					   Språket ble lansert i 1999 av W3C som et resultat av manglende måter å presentere mattestykker i HTML. 
+					   Tidligere var det vanlig å bruke bilder av formlene på nettsider. Ulempene med dette var at man ikke kunne manipulere
+					   de matematiske formlene uten å sette inn et nytt bilde og det fantes ikke noen alternativer for de som ikke kunne se bildene.
+					   Den siste versjonen av Math ML ble lansert i 2011, men måtte igjennom en del endringer før den ble endelig integrert i HTML5 ifra 2015.
+					</p>
+					<p>Math ML løste dette problemet ved å gi utviklere to måter å presentere matematiske formler. Den ene innebærer semantiske tagger
+					   som forteller opplesningssytemer hvordan de skal uttale mattestykker og den andre inneholder instruksjoner for hvordan nettlesere
+					   skal tolke mattestykker slik at de blir vist korrekt.
+					</p>
+					<p>I motsettning til tidligere metoder kan Math ML kodes som en del av et vanlig HTML5-dokument, noe som gjør det utrolig mye enklere
+					   å redigere matematiske formler og sørge for god tilgjengelighet ved at de kan leses opp ved bruk av skjermleser og semantiske tagger.
+					</p>
+					<p><b>NB!</b>Siden Chrome ikke støtter Math ML så må man vise denne nettsiden i Firefox for at kodeeksemplene skal fungere ordentlig.
+					</p>
+					<math>
+						<semantics>
+							<mrow>
+							   <msup>
+								 <mfenced>
+								   <mrow>
+										<mi>a</mi>
+										<mo>+</mo>
+										<mi>b</mi>
+									</mrow>
+									</mfenced>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+							<annotation-xml encoding="MathML-Content">	
+								<mrow>
+									<apply>
+										<power/>
+											<apply>
+												<plus/>
+												<ci>a</ci>
+												<ci>b</ci>
+											</apply>
+										 <cn>2</cn>
+									</apply>
+								</mrow>
+							</annotation-xml>	
+						</semantics>	
+					</math>
+					<math>
+						<semantics>
+							<mrow>
+								<mrow>
+									<msup> <mi>x</mi> <mn>2</mn> </msup> <mo>+</mo>
+										<mrow>
+											<mn>4</mn>
+											<mo>&InvisibleTimes;</mo>
+											<mi>x</mi>
+										</mrow>
+									<mo>+</mo>
+									<mn>4</mn>
+								</mrow>
+									<mo>=</mo>
+									<mn>0</mn>
+							</mrow>
+							<annotation-xml encoding="MathML-Content">	
+								<apply>
+									<eq/>
+									<apply>
+										<plus/>
+										<apply>
+											<power/>
+											<ci>x</ci>
+											<cn>2</cn>
+										</apply>
+										<apply>
+											<times/>
+											<cn>4</cn>
+											<ci>x</ci>
+										</apply>
+										<cn>4</cn>
+									</apply>
+										<cn>0</cn>
+								</apply>
+							</annotation-xml>
+						</semantics>
+					</math>
+					<math>
+						
+						  <semantics>
+
+							<!-- Presentation MathML -->
+							<mrow>
+								<mi>E</mi>
+								<mo>=</mo>
+								<mi>m</mi>
+								<msup>
+									<mi>c</mi>
+									<mn>2</mn>
+								</msup>
+							</mrow>
+							
+							<!-- Content MathML -->
+							<annotation-xml encoding="MathML-Content">
+								<apply>
+									<eq />
+										<ci>E</ci>
+									<apply>
+										<times/>
+										<ci>m</ci>
+										<apply>
+											<power/>
+											<ci>c</ci>
+											<cn>2</cn>
+										</apply>
+									</apply>
+								</apply>
+							</annotation-xml>
+						</semantics>
+					</math>
+				</article>
+			</main>
+			<div id="about">
+				<a href="omdennesiden.html" id="btnomdennesiden">Om denne siden <i class="fa fa-external-link" aria-hidden="true"></i></a>
+			</div>
+			<footer>
+			</footer>
+		</section>	
+	</body>
+</html>

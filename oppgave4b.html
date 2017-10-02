@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Oppgave 4 WEB</title>
+		<link rel="stylesheet" type="text/css" href="stiler/stilarkartikkel.css" />
+		<script src="https://use.fontawesome.com/d791c8d292.js">
+		</script>
+	</head>
+	<body>
+		<section id="master-grid">
+			<header>
+					<nav>
+					<ul>
+						<li><a href="index.html">Hjem</a></li>
+						<li><a>Linkearkiv</a>
+							<ul>
+								<li><a href="#">Nåværende prosjekter</a></li>
+								<li><a href="#">Kommende prosjekter</a></li>
+							</ul>
+						</li>	
+						<li><a>Info</a>
+							<ul>
+								<li><a href="#">artikler</a></li>
+								<li><a href="#">Git og Github</a></li>
+								<li><a href="#">Math ML</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+			<main>
+				<article class="emner">
+					<h1>SVG
+					</h1>
+					<p>SVG står for Scaleable Vector Graphics og blir brukt til å skape vektorbaserte grafikkelementer på nettsider. 
+					   Det er XML-basert, (Extensible Markup Language), som i praksis betyr at det kan skrives rett i HTML5. 
+					   Første versjon av SVG ble introdusert i slutten av 2001 og ble forbedret i 2003 og 2011. 
+					   SVG sin største konkurrent er Flash, som kommer ifra Adobe, men har mange fordeler som Flash ikke har.
+					</p>
+					<p>Fordelene ved å bruke SVG er at du kan manipulere grafikken ved hjelp av Javascript og CSS. 
+					   Det er heller ikke basert på pixler, noe som gjør at det skalerer mye bedre enn annen type grafikk som f.eks PNG eller JPG.
+					   Flash på sin side er ofte overkill i forhold til behovet man har og eies av et selskap. SVG på sin side er et open source prosjekt.
+					</p>
+					<p>Det er ikke veldig mange ulemper med SVG, men formatet har likevel noen skår i gleden. 
+					   En av disse er at filstørrelsen øker drastisk med størrelsen på grafikken, særlig i situasjoner der grafikken består av mange små filer.
+					   En annen ulempe kan være at det ikke er mulig å rendere deler av et grafisk element. Man må rendere hele, noe som gjør at det kan gå saktere.
+					   Det er også bare støttet i nyere nettlesere og det kan heller ikke erstatte komplekse fotografier.
+					</p>
+					<svg width="700" height="260">
+						<rect x="50" y="50" rx="100" ry="100" width="200" height="200" style="stroke:red; fill:gray; stroke-width: 5;"/>
+						<circle x="70" y="40" cx="100" cy="100" r="10" />
+						<circle x="70" y="40" cx="200" cy="100" r="10" />
+						<circle x="70" y="40" cx="100" cy="170" r="10" />
+						<circle x="70" y="40" cx="110" cy="180" r="10" />
+						<circle x="70" y="40" cx="120" cy="190" r="10" />
+						<circle x="70" y="40" cx="130" cy="200" r="10" />
+						<circle x="70" y="40" cx="140" cy="200" r="10" />
+						<circle x="70" y="40" cx="150" cy="200" r="10" />
+						<circle x="70" y="40" cx="160" cy="200" r="10" />
+						<circle x="70" y="40" cx="170" cy="190" r="10" />
+						<circle x="70" y="40" cx="180" cy="180" r="10" />
+						<circle x="70" y="40" cx="190" cy="170" r="10" />
+						<rect x="400" y="50" rx="0" ry="100" width="200" height="200" style="stroke:blue; fill:green; stroke-width: 5;"/>
+					</svg>
+				</article>
+			</main>
+			<div id="about">
+				<a href="omdennesiden.html" id="btnomdennesiden">Om denne siden <i class="fa fa-external-link" aria-hidden="true"></i></a>
+			</div>
+			<footer>
+			</footer>
+		</section>	
+	</body>
+</html>

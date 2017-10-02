@@ -1,0 +1,123 @@
+@import url("https://necolas.github.io/normalize.css/7.0.0/normalize.css");
+
+#master-grid {
+	max-width: 1000px;
+	min-height: 100vh;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas: "header header header header"
+						 "article article article obligfrister"
+						 "article article article obligfrister"
+						 "omdennesiden footer footer footer";
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 100px auto auto 100px;
+}
+
+header {
+	grid-area: header;
+	background-color: #cbbeb5;
+}
+nav{
+	width:100%;
+}
+
+nav ul {
+	list-style:none;
+	color: white;
+}
+
+nav ul li {
+	display:inline-block;
+	/* margin-right: 20px; */
+}
+nav ul li a{
+	font-size: 16pt;
+	line-height: 44px;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 12px 15px;
+	
+}
+
+/* DROP DOWN MENU */
+
+nav ul li ul {
+	Display:none;
+	position:absolute;
+}
+
+/* HOVER */
+
+nav ul li:hover ul {
+	display:block;
+	background-color:#444444;
+}
+
+nav ul li ul li {
+	display:block;
+}
+
+main {
+	grid-area: article;
+	display: flex;
+	flex-wrap: wrap;
+	background-color: #F5F5F5;
+}
+
+article.emner{
+	flex-grow: 1;
+	width: 33%
+}
+
+.obligfrister {
+	grid-area: obligfrister;
+	background-color: #F5F5F5;
+}
+
+.btnlesMer {
+	background-color: #444;
+	padding: 10px 0px;
+	text-align: center;
+	font-size: 18px;
+	margin: 0 auto;
+	display: block;
+	width: 100px;
+	border-radius: 12px;
+}
+
+a:link {
+	color: green;
+}
+
+a:visited{
+	color: yellow;
+}
+
+a:hover {
+	color: purple;
+	box-shadow: inset 0px 0px 5px 5px #222;
+}
+
+a:active {
+	color: blue;
+}
+
+#about {
+	grid-area: omdennesiden;
+	background-color: #cbbeb5;
+}
+
+#btnomdennesiden {
+	padding: 10px 10px;
+	text-align: center;
+	font-size: 18px;
+	display: block;
+	margin: 30px auto;
+	width: 150px;
+	border-radius: 12px;
+}
+
+footer {
+	grid-area: footer;
+	background-color: #cbbeb5;
+}
