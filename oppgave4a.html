@@ -46,10 +46,19 @@
 					<p>I motsettning til tidligere metoder kan Math ML kodes som en del av et vanlig HTML5-dokument, noe som gjør det utrolig mye enklere
 					   å redigere matematiske formler og sørge for god tilgjengelighet ved at de kan leses opp ved bruk av skjermleser og semantiske tagger.
 					</p>
-					<p><b>NB!</b>Siden Chrome ikke støtter Math ML så må man vise denne nettsiden i Firefox for at kodeeksemplene skal fungere ordentlig.
+					<p>Ulempene med Math ML er at det er få nettlesere som støtter standarden. Noe  av grunnen til dette er den begrensede bruken av elementene.
+					   Siden det ikke er en veldig utbredt standard så har Google besluttet å kutte støtten av Math ML. 
+					   Dette innebærer at elementene blir behandlet som ren tekst istedet for formler og opphøyde tall. 
+					   For å se kodeeksemplene nedenfor ordentlig må man bruke bl.a. Firefox.
 					</p>
+					<p>Her ser man tre eksempler på både Math ML <b>content</b> og <b>presentation</b>. Nettleseren hopper over <b>presentation</b> og går rett til <b>content</b>. 
+					   Skjermoppleseren leser bare <b>presentation</b> mens den hopper over <b>content</b>. 
+					</p>
+					
 					<math>
 						<semantics>
+						
+							<!-- Presentation MathML -->
 							<mrow>
 							   <msup>
 								 <mfenced>
@@ -62,6 +71,8 @@
 									<mn>2</mn>
 								</msup>
 							</mrow>
+							
+							<!-- Content MathML -->
 							<annotation-xml encoding="MathML-Content">	
 								<mrow>
 									<apply>
@@ -79,6 +90,8 @@
 					</math>
 					<math>
 						<semantics>
+						
+							<!-- Presentation MathML -->
 							<mrow>
 								<mrow>
 									<msup> <mi>x</mi> <mn>2</mn> </msup> <mo>+</mo>
@@ -93,6 +106,8 @@
 									<mo>=</mo>
 									<mn>0</mn>
 							</mrow>
+							
+							<!-- Content MathML -->
 							<annotation-xml encoding="MathML-Content">	
 								<apply>
 									<eq/>
@@ -116,9 +131,8 @@
 						</semantics>
 					</math>
 					<math>
+						<semantics>
 						
-						  <semantics>
-
 							<!-- Presentation MathML -->
 							<mrow>
 								<mi>E</mi>
