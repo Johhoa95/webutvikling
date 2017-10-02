@@ -97,6 +97,10 @@ a:active {
 	background-color: gray;
 }
 
+math {
+	margin-right: 40px;
+}
+
 #btnomdennesiden {
 	padding: 10px 10px;
 	text-align: center;
