@@ -15,7 +15,7 @@
 
 header {
 	grid-area: header;
-	background-color: gray;
+	background-color: #cbbeb5;
 }
 
 nav{
@@ -65,8 +65,9 @@ main {
 }
 
 .tabell {
+	grid-area: table;
 	text-align: center;
-	width: 400px;
+	width: 600px;
 }
 
 table tr:nth-child(even){
@@ -103,7 +104,7 @@ a:active {
 
 #about {
 	grid-area: omdennesiden;
-	background-color: gray;
+	background-color: #cbbeb5;
 }
 
 math {
@@ -112,7 +113,6 @@ math {
 
 #btnomdennesiden {
 	padding: 10px 10px;
-	text-align: center;
 	font-size: 18px;
 	display: block;
 	margin: 30px auto;
@@ -121,5 +121,5 @@ math {
 
 footer {
 	grid-area: footer;
-	background-color: gray;
+	background-color: #cbbeb5;
 }
