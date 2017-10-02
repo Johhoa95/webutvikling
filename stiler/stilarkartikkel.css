@@ -36,6 +36,8 @@ nav ul li a{
 	line-height: 44px;
 	text-decoration: none;
 	color: #ffffff;
+	padding: 12px 15px;
+	
 }
 
 /* DROP DOWN MENU */
@@ -49,7 +51,7 @@ nav ul li ul {
 
 nav ul li:hover ul {
 	display:block;
-	background-color:#444444;
+	background-color: #E6E6FA;
 }
 
 nav ul li ul li {
