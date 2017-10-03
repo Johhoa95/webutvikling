@@ -64,19 +64,20 @@ main {
 	flex-wrap: wrap;
 }
 
+article.emner{
+	flex-grow: 1;
+	width: 33%
+}
+
 .tabell {
 	grid-area: table;
 	text-align: center;
-	width: 600px;
+	width: auto;
 }
 
 table tr:nth-child(even){
 	background-color: gray;
-}
-
-article.emner{
-	flex-grow: 1;
-	width: 33%
+	color: white;
 }
 
 a:link {
