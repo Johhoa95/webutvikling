@@ -11,6 +11,7 @@
 						 "omdennesiden footer footer footer";
 	grid-template-columns: 1fr 1fr 1fr 1fr;
 	grid-template-rows: 100px auto auto 100px;
+	box-sizing: border-box;
 }
 
 header {
@@ -64,6 +65,7 @@ main {
 	flex-wrap: wrap;
 	background-color: #F5F5F5;
 	text-align: center;
+	padding: 10px 12px;
 }
 
 article.emner{
