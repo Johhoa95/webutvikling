@@ -51,6 +51,7 @@ nav ul li ul {
 nav ul li:hover ul {
 	display:block;
 	background-color: #E6E6FA;
+	opacity: 0.9;
 }
 
 nav ul li ul li {
