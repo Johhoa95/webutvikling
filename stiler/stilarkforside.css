@@ -1,5 +1,9 @@
+/* Visker ut forskjellene mellom visningene i forskjellige nettlesere */
 @import url("https://necolas.github.io/normalize.css/7.0.0/normalize.css");
 
+/* /* Her setter jeg opp rutenettet for siden,
+*  spesifiserer minimumshøyden slik at footer forholder seg i bånn
+*  og forhindrer at artikkelboksene blir større med padding */
 #master-grid {
 	max-width: 1000px;
 	min-height: 100vh;
@@ -14,23 +18,31 @@
 	box-sizing: border-box;
 }
 
+/* Spesifiserer hvor header skal være og bakgrunnsfarge */
 header {
 	grid-area: header;
 	background-color: #cbbeb5;
 }
+
+/* TOP MENY */
+/* Setter en høyde på menyen i toppen */
 nav{
 	width:100%;
 }
 
+/* Tar vekk listepunktene og farger all tekst som ikke er linker hvit */
 nav ul {
 	list-style:none;
 	color: white;
 }
 
+/* Får elementene i listen til å flyte til siden med en marg til høyre */
 nav ul li {
 	display:inline-block;
 	margin-right: 20px;
 }
+
+/* Endrer fonstørrelse, linjehøyden, tar vekk understrekene som standard, legger på en tekstfarge og en padding */
 nav ul li a{
 	font-size: 16pt;
 	line-height: 44px;
@@ -41,24 +53,29 @@ nav ul li a{
 }
 
 /* DROP DOWN MENU */
-
+/* Skjuler listen og setter en posisjon som er absolutt ift andre elementer */
 nav ul li ul {
 	Display:none;
 	position:absolute;
 }
 
 /* HOVER */
-
+/* Tvinger listen til å vises som et block-element, forandrer bakgrunnsfargen og gjør den litt gjennomsiktig */
 nav ul li:hover ul {
 	display:block;
 	background-color: #E6E6FA;
 	opacity: 0.9;
 }
 
+/* Tvinger listen til å vises under hverandre */
 nav ul li ul li {
 	display:block;
 }
 
+/* Kobler main opp til rammestrukturen hvor jeg har spesifisert at main skal være,
+*  Forteller systemet at flexbox skal brukes og 
+*  at artiklene skal legge seg under hverandre når det blir for mange på en linje.
+*  I tillegg sentrerer jeg teksten, forandrer bakgrunnsfargen og legger på en indre marg */
 main {
 	grid-area: article;
 	display: flex;
@@ -68,16 +85,22 @@ main {
 	padding: 10px 12px;
 }
 
+/* Gir hver artikkel en rute hver hvor hver artikkel får 33% av den totale bredden */
 article.emner{
 	flex-grow: 1;
 	width: 33%
 }
 
+/* Legger obligfristene i feltet som er satt av til dette i rammestrukturen.
+* Forandrer i tillegg bakgrunnsfargen */
 .obligfrister {
 	grid-area: obligfrister;
 	background-color: #F5F5F5;
 }
 
+/* Styling for "Les Mer"-knappen.
+*  Endrer bakgrunnsfargen, indre og ytre marg, sentrerer teksten, endrer fonstørrelse, 
+*  tvinger den til å vises som et block-element, spesifiserer bredden og legger til en avrundet kant */
 .btnlesMer {
 	background-color: #E6E6FA;
 	padding: 10px 0px;
@@ -89,35 +112,45 @@ article.emner{
 	border-radius: 12px;
 }
 
+/* Forandrer farge på ubesøkte linker */
 a:link {
 	color: #0645AD;
 }
 
+/* Forandrer farge på besøkte linker */
 a:visited{
 	color: 	#0B0080;
 }
 
+/* Forandrer farge på linker når man holder musa over
+* Legger til en skygge på innsiden, understrek på linkene og avrunde kanter */
 a:hover {
 	color: #0645AD;
 	box-shadow: inset 0px 0px 5px 5px #222;
 	text-decoration: underline;
+	border-radius: 12px;
 }
 
+/* Forandrer farge på linker når man trykker på linkene og litt gjennomsiktighet*/
 a:active {
 	color: #0645AD;
 	opacity: 0.7;
 }
 
+/* sentrerer tabellen og spesifiserer bredden */
 table {
 	margin: 0 auto;
 	width: 180px;
 }
 
+/* Forteller knappen hvor den skal plasseres i rammestrukturen og forandrer bakgrunnsfargen */
 #about {
 	grid-area: omdennesiden;
 	background-color: #cbbeb5;
 }
 
+/* Forandrer egenskapene til knappen til venstre for footer.
+   Legger til indre og ytre marg, endrer fontstørrelse, bredde og avrunder kantene */
 #btnomdennesiden {
 	padding: 10px 10px;
 	text-align: center;
@@ -128,6 +161,7 @@ table {
 	border-radius: 12px;
 }
 
+/* Forteller hvor Footer skal være i rammestrukturen og endrer bakgrunnsfargen */
 footer {
 	grid-area: footer;
 	background-color: #cbbeb5;

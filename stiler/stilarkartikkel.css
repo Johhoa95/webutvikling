@@ -92,11 +92,13 @@ img:hover {
 	opacity: 0.9;
 }
 
-/* Forteller tabellen hvor i rammestrukturen hvor den skal ligge, sentrerer teksten og gir den mulighten til å utvide seg i bredden ut ifra innholdet */
+/* Forteller tabellen hvor i rammestrukturen hvor den skal ligge, sentrerer teksten og gir den mulighten til å utvide seg i bredden ut ifra innholdet
+* I tillegg legger jeg til luft imellom tabell og Footer */
 .tabell {
 	grid-area: table;
 	text-align: center;
 	width: auto;
+	margin-bottom: 20px;
 }
 
 /* Legger på en bakgrunnsfarge på annenhver rad og forandrer fargen på skriften til hvit */
@@ -116,11 +118,12 @@ a:visited{
 }
 
 /* Forandrer farge på linker når man holder musa over
-* Legger til en skygge på innsiden og understrek på linkene */
+* Legger til en skygge på innsiden, understrek på linkene og avrundene kanter */
 a:hover {
 	color: #0645AD;
 	box-shadow: inset 0px 0px 5px 5px #222;
 	text-decoration: underline;
+	border-radius: 12px;
 }
 
 /* Forandrer farge på linker når man trykker på linkene og litt gjennomsiktighet*/
@@ -141,13 +144,15 @@ math {
 }
 
 /* Forandrer egenskapene til knappen til venstre for footer.
-   Legger til indre og ytre marg, endrer fontstørrelse og bredden */
+   Legger til indre og ytre marg, endrer fontstørrelse, bredde og avrunder kantene */
 #btnomdennesiden {
 	padding: 10px 10px;
+	text-align: center;
 	font-size: 18px;
 	display: block;
 	margin: 30px auto;
 	width: 150px;
+	border-radius: 12px;
 }
 
 /* Forteller hvor Footer skal være i rammestrukturen og endrer bakgrunnsfargen */
