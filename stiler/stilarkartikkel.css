@@ -78,6 +78,16 @@ article.emner{
 	width: 33%
 }
 
+img {
+	width: 500px;
+	float: right;
+	margin: 10px;
+}
+
+img:hover {
+	opacity: 0.9;
+}
+
 .tabell {
 	grid-area: table;
 	text-align: center;
