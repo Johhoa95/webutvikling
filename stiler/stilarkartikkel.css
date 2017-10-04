@@ -1,3 +1,4 @@
+/* Visker ut forskjellene mellom visningene i forskjellige nettlesere */
 @import url("https://necolas.github.io/normalize.css/7.0.0/normalize.css");
 
 /* Her setter jeg opp rutenettet for siden,
@@ -23,49 +24,55 @@ header {
 	background-color: #cbbeb5;
 }
 
+/* TOP MENY */
 /* Setter en høyde på menyen i toppen */
 nav{
 	width:100%;
 }
 
-/* Tar vekk listepunktene og endrer farge på listeelementene som ikke er linker  */
+/* Tar vekk listepunktene og farger all tekst som ikke er linker hvit */
 nav ul {
 	list-style:none;
 	color: white;
 }
 
-
+/* Får elementene i listen til å flyte til siden med en marg til høyre */
 nav ul li {
 	display:inline-block;
 	margin-right: 20px;
 }
+
+/* Endrer fonstørrelse, linjehøyden, tar vekk understrekene som standard, legger på en tekstfarge og en padding */
 nav ul li a{
-	font-size: 14pt;
+	font-size: 16pt;
 	line-height: 44px;
 	text-decoration: none;
 	color: #ffffff;
 	padding: 12px 15px;
-	
 }
 
 /* DROP DOWN MENU */
-
+/* Skjuler listen og setter en posisjon som er absolutt ift andre elementer */
 nav ul li ul {
 	Display:none;
 	position:absolute;
 }
 
 /* HOVER */
-
+/* Tvinger listen til å vises som et block-element, forandrer bakgrunnsfargen og gjør den litt gjennomsiktig */
 nav ul li:hover ul {
 	display:block;
 	background-color: #E6E6FA;
+	opacity: 0.9;
 }
 
+/* Tvinger listen til å vises under hverandre */
 nav ul li ul li {
 	display:block;
 }
 
+/* Kobler main opp til rammestrukturen hvor jeg har spesifisert at main skal være,
+*  Forteller systemet at flexbox skal brukes og at artiklene skal legge seg under hverandre når det blir for mange på en linje */
 main {
 	grid-area: article;
 	display: flex;
@@ -73,64 +80,68 @@ main {
 	padding: 10px 12px;
 }
 
-article.emner{
-	flex-grow: 1;
-	width: 33%
-}
-
+/* Setter en bredde på bildet, forteller det at det skal flyte til høyre og ha en utvendig marg på 10px */
 img {
 	width: 500px;
 	float: right;
 	margin: 10px;
 }
 
+/* Setter på en gjennomsiktighet når man flytter musa over bildet */
 img:hover {
 	opacity: 0.9;
 }
 
+/* Forteller tabellen hvor i rammestrukturen hvor den skal ligge, sentrerer teksten og gir den mulighten til å utvide seg i bredden ut ifra innholdet */
 .tabell {
 	grid-area: table;
 	text-align: center;
 	width: auto;
 }
 
+/* Legger på en bakgrunnsfarge på annenhver rad og forandrer fargen på skriften til hvit */
 table tr:nth-child(even){
 	background-color: gray;
 	color: white;
 }
 
+/* Forandrer farge på ubesøkte linker */
 a:link {
 	color: #0645AD;
 }
 
+/* Forandrer farge på besøkte linker */
 a:visited{
 	color: 	#0B0080;
 }
 
+/* Forandrer farge på linker når man holder musa over
+* Legger til en skygge på innsiden og understrek på linkene */
 a:hover {
 	color: #0645AD;
 	box-shadow: inset 0px 0px 5px 5px #222;
 	text-decoration: underline;
 }
 
+/* Forandrer farge på linker når man trykker på linkene og litt gjennomsiktighet*/
 a:active {
 	color: #0645AD;
 	opacity: 0.7;
 }
 
-#grafikk {
-	background-color: white;
-}
-
+/* Forteller knappen hvor den skal plasseres i rammestrukturen og forandrer bakgrunnsfargen */
 #about {
 	grid-area: omdennesiden;
 	background-color: #cbbeb5;
 }
 
+/* Legger til luft mellom mattestykkene for å øke lesbarheten */
 math {
 	margin-right: 40px;
 }
 
+/* Forandrer egenskapene til knappen til venstre for footer.
+   Legger til indre og ytre marg, endrer fontstørrelse og bredden */
 #btnomdennesiden {
 	padding: 10px 10px;
 	font-size: 18px;
@@ -139,6 +150,7 @@ math {
 	width: 150px;
 }
 
+/* Forteller hvor Footer skal være i rammestrukturen og endrer bakgrunnsfargen */
 footer {
 	grid-area: footer;
 	background-color: #cbbeb5;
