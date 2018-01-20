@@ -139,7 +139,7 @@ a:active {
 }
 
 /* Legger til luft mellom mattestykkene for å øke lesbarheten */
-math {
+.matte {
 	margin-right: 40px;
 }
 

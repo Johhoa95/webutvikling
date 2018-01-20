@@ -3,13 +3,16 @@
 	<head>
 		<meta charset="utf-8" />
 		<title>Oppgave 4a WEB</title>
-		<link rel="stylesheet" type="text/css" href="stiler/stilarkartikkel.css" />
 		<script src="https://use.fontawesome.com/d791c8d292.js">
 		</script>
+		<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>
+		<link rel="stylesheet" type="text/css" href="stiler/stilarkartikkel.css" />
 	</head>
 	<body>
 		<section id="master-grid">
 			<header>
+				<!-- Menyen øverst på siden -->
 				<nav>
 					<ul>
 						<li><a href="index.html">Hjem</a></li>
@@ -35,6 +38,7 @@
 				</nav>
 			</header>
 			<main>
+				<!-- Innholdet som ligger mellom Header og Footer -->
 				<article class="emner">
 					<h1>Math ML
 					</h1>
@@ -54,13 +58,14 @@
 					<p>Ulempene med Math ML er at det er få nettlesere som støtter standarden. Noe  av grunnen til dette er den begrensede bruken av elementene.
 					   Siden det ikke er en veldig utbredt standard så har Google besluttet å kutte støtten av Math ML. 
 					   Dette innebærer at elementene blir behandlet som ren tekst istedet for formler og opphøyde tall. 
-					   For å se kodeeksemplene nedenfor ordentlig må man bruke bl.a. Firefox.
+					   For å se kodeeksemplene nedenfor i Chrome ble jeg derfor nødt til å legge inn en egen script-tagg med "Math Jax". 
+					   Dette legger til denne funksjonaliteten i Chrome slik at man ikke må bruke Firefox for å se innholdet korrekt.
 					</p>
 					<p>Her ser man tre eksempler på både Math ML <b>content</b> og <b>presentation</b>. Nettleseren hopper over <b>presentation</b> og går rett til <b>content</b>. 
 					   Skjermoppleseren leser bare <b>presentation</b> mens den hopper over <b>content</b>. 
 					</p>
 					
-					<math>
+					<math class="matte">
 						<semantics>
 						
 							<!-- Presentation MathML -->
@@ -93,7 +98,7 @@
 							</annotation-xml>	
 						</semantics>	
 					</math>
-					<math>
+					<math class="matte">
 						<semantics>
 						
 							<!-- Presentation MathML -->
@@ -135,7 +140,7 @@
 							</annotation-xml>
 						</semantics>
 					</math>
-					<math>
+					<math class="matte">
 						<semantics>
 						
 							<!-- Presentation MathML -->
@@ -170,8 +175,10 @@
 				</article>
 			</main>
 			<div id="about">
+				<!-- Her legger jeg til en knapp i bånn med en ikonfont som henviser til at man havner på en ny fane -->
 				<a href="omdennesiden.html" id="btnomdennesiden">Om denne siden <i class="fa fa-external-link" aria-hidden="true"></i></a>
 			</div>
+			<!-- Her har jeg ikke lagt inn noe, men må ha den med likevel for at Footer skal synes på nettsiden -->
 			<footer>
 			</footer>
 		</section>	
